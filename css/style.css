@@ -1,0 +1,142 @@
+
+.jcarousel {
+  position: relative;
+  /*width: 100%;*/
+  width: 600px;
+  overflow: hidden;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+  /*width: 100px;*/
+}
+
+/*====== CUSTOM - SELECT ========*/
+
+.custom-check {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(../img/checkbox-sprite.png);
+  overflow: hidden;
+}
+
+.custom-check {
+  background-position: 0 -17px;
+}
+
+.custom-check input {
+  margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+}
+
+.custom-checkDisabled {
+  background-image: url(../img/checkbox-disabled.png);
+}
+
+/*===CUSTOM CHECKBOX JS ========*/
+.checkbox-js{
+  background-color: #2db0ff;
+  padding: 15px;
+}
+
+.decor_checkbox span input[type="checkbox"] {
+  display: none;
+}
+
+.decor_checkbox {
+  clear: both;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+.decor_checkbox span {
+  display: inline-block;
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+  background: url(../img/checkbox-sprite.png) no-repeat 0 0;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+.check_active span {
+  background-position: 0 -17px;
+}
+.check_active-dis.check_active span {
+  background: url(../img/checkbox-disabled.png) no-repeat 0 -17px;
+}
+.no-check-dis span {
+  background: url(../img/checkbox-disabled.png) no-repeat 0 0;
+}
+
+/*===CUSTOM CHECBOX CSS========*/
+
+.custom-checkbox-css,
+.custom-radio-css {
+  margin: 25px;
+  list-style: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  font: 18px bold;
+  color: #444;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  margin: 0 5px 0 0;
+  background-image: url(../img/sprite-checkbox.png);
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"] + label::before {
+  background-position: -38px -260px;
+}
+
+input[type="radio"] + label::before {
+  background-position: 0px -279px;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-position: -114px -260px;
+}
+
+input[type="radio"]:checked + label::before {
+  background-position: -108px -279px;
+}
+
+input[type="checkbox"]:disabled + label::before {
+  background-position: -152px -260px;
+}
+
+input[type="checkbox"]:checked:disabled + label::before {
+  background-position: -171px -260px;
+}
+
+input[type="radio"]:disabled + label::before {
+  background-position: -144px -279px;
+}
+
+input[type="radio"]:checked:disabled + label::before {
+  background-position: -162px -279px;
+}
