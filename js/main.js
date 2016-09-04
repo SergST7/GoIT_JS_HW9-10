@@ -1,7 +1,14 @@
 $(function () {
 
   // carousel
-  $('.jcarousel').jcarousel();
+  $('.jcarousel').jcarousel({
+    wrap: 'both',
+    center: true
+  }).jcarouselAutoscroll({
+    interval: 3000,
+    target: '+=1',
+    autostart: true
+  });
 
   $('.jcarousel-prev').click(function () {
     $('.jcarousel').jcarousel('scroll', '-=1');
@@ -15,6 +22,7 @@ $(function () {
     item: function (page) {
       return '<a href="#' + page + '">' + page + '</a>';
     }
+
   });
 
   // custom select
@@ -35,21 +43,22 @@ $(function () {
   });
 
   // при клике по диву, делаем проверку
-  $('.decor_checkbox span').click(function(){
-    var checkbox = $(this).find('input[type=checkbox]');
-    console.log(this);
-    // если чекбокс был активен
-    if((checkbox.prop("checked"))&&(!checkbox.prop("disabled"))){
-      // снимаем класс с родительского дива
-      $(this).parent().removeClass("check_active");
-      // и снимаем галочку с чекбокса
-      checkbox.prop("checked", false);
-      // если чекбокс не был активен
-    }else{
-      // добавляем класс родительскому диву
-      $(this).parent().addClass("check_active");
-      // ставим галочку в чекбоксе
-      checkbox.prop("checked", true);
+  $('.decor_checkbox label').click(function(e){
+    var checkbox = $(this).parent().find('input[type=checkbox]');
+    if(!checkbox.prop("disabled")) {
+      // если чекбокс был активен
+      if (checkbox.prop("checked")) {
+        // снимаем класс с родительского дива
+        $(this).parent().removeClass("check_active");
+        // и снимаем галочку с чекбокса
+        checkbox.prop("checked", false);
+        // если чекбокс не был активен
+      } else {
+        // добавляем класс родительскому диву
+        $(this).parent().addClass("check_active");
+        // ставим галочку в чекбоксе
+        checkbox.prop("checked", true);
+      }
     }
   });
 });
