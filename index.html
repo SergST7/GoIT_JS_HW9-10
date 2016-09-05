@@ -13,6 +13,7 @@
 <body>
 <div class="wrapper">
   <!--задача 1 карусель-->
+  <h2>Plug-in jCarousel</h2>
   <div class="carousel-wrapper">
     <!-- Carousel -->
     <div class="jcarousel">
@@ -41,8 +42,8 @@
       </ul>
     </div>
     <!-- Controls -->
-    <a class="jcarousel-prev" href="#">Prev</a>
-    <a class="jcarousel-next" href="#">Next</a>
+    <a class="jcarousel-prev" href="#">‹</a>
+    <a class="jcarousel-next" href="#">›</a>
     <!-- Pagination -->
     <div class="jcarousel-pagination">
       <!-- Pagination items will be generated in here -->
@@ -50,6 +51,7 @@
   </div>
   <!--задача 2 castom select-->
   <div class="select-wrapper">
+    <h2>Plug-in Chosen-Select & Custom checkbox </h2>
     <select data-placeholder="Choose a Country..." class="chosen-select">
       <option value=""></option>
       <option value="United States">United States</option>
@@ -361,7 +363,6 @@
   <!-- задача 3 castom checkbox JS-->
   <div class="checkbox-wrapper">
     <div class="checkbox-js">
-
       <div class="decor_checkbox">
         <label for="ch1">label 1
       <span>
@@ -371,7 +372,7 @@
       <div class="decor_checkbox">
         <label for="ch2">label 2
       <span>
-        <input type="checkbox"  checked
+        <input type="checkbox" checked
                id="ch2" tabindex="2" value="2">
       </span></label>
       </div>
@@ -384,7 +385,7 @@
       <div class="decor_checkbox">
         <label for="ch4">label 4
       <span>
-        <input type="checkbox" id="ch4"  disabled>
+        <input type="checkbox" id="ch4" disabled>
       </span></label>
       </div>
     </div>
@@ -421,6 +422,77 @@
         <label for="rthird">Disabled radio</label>
       </li>
     </ul>
+  </div>
+  <!-- задача 4 drop-down menu JS-->
+  <div class="menu-wrapper">
+    <div class="topmenu">
+      <ul class="menu-horizontal">
+        <li><a href="#" title="Меню 1">Меню 1</a>
+          <ul>
+            <li><a href="#" title="Элемент 1.1">Элемент 1.1</a></li>
+            <li><a href="#" title="Элемент 1.2">Элемент 1.2</a></li>
+            <li><a href="#" title="Элемент 1.3">Элемент 1.3</a></li>
+          </ul>
+        </li>
+        <li><a href="#" title="Меню 2">Меню 2</a>
+          <ul>
+            <li><a href="#" title="Элемент 2.1">Элемент 2.1</a></li>
+            <li><a href="#" title="Элемент 2.2">Элемент 2.2</a>
+              <ul>
+                <li><a href="#" title="Элемент 2.2.1">Элемент 2.2.1</a></li>
+                <li><a href="#" title="Элемент 2.2.2">Элемент 2.2.2</a></li>
+                <li><a href="#" title="Элемент 2.2.3">Элемент 2.2.3</a>
+                  <ul>
+                    <li><a href="#" title="Элемент 2.2.3.1">Элемент 2.2
+                      .3.1</a></li>
+                    <li><a href="#" title="Элемент 2.2.3.2">Элемент 2.2
+                      .3.2</a></li>
+                    <li><a href="#" title="Элемент 2.2.3.3">Элемент 2.2
+                      .3.3</a></li>
+                    <li><a href="#" title="Элемент 2.2.3.4">Элемент 2.2
+                      .3.4</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" title="Элемент 2.2.4">Элемент 2.2.4</a></li>
+              </ul>
+            </li>
+            <li><a href="#" title="Элемент 2.3">Элемент 2.3</a></li>
+            <li><a href="#" title="Элемент 2.4">Элемент 2.4</a></li>
+          </ul>
+        </li>
+        <li><a href="#" title="Меню 3">Меню 3</a>
+          <ul>
+            <li><a href="#" title="Элемент 3.1">Элемент 3.1</a></li>
+            <li><a href="#" title="Элемент 3.2">Элемент 3.2</a></li>
+            <li><a href="#" title="Элемент 3.3">Элемент 3.3</a></li>
+            <li><a href="#" title="Элемент 3.4">Элемент 3.4</a>
+              <ul>
+                <li><a href="#" title="Элемент 3.4.1">Элемент 3.4.1</a></li>
+                <li><a href="#" title="Элемент 3.4.2">Элемент 3.4.2</a>
+                  <ul>
+                    <li><a href="#" title="Элемент 3.4.2.1">Элемент 3.4
+                      .2.1</a></li>
+                    <li><a href="#" title="Элемент 3.4.2.2">Элемент 3.4
+                      .2.2</a></li>
+                    <li><a href="#" title="Элемент 3.4.2.3">Элемент 3.4
+                      .2.3</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" title="Элемент 3.4.3">Элемент 3.4.3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#" title="Меню 3">Меню 4</a>
+          <ul>
+            <li><a href="#" title="Элемент 4.1">Элемент 4.1</a></li>
+            <li><a href="#" title="Элемент 4.2">Элемент 4.2</a></li>
+            <li><a href="#" title="Элемент 4.3">Элемент 4.3</a></li>
+          </ul>
+        </li>
+        <li><a href="#" title="Меню 5">Меню 5</a>
+      </ul>
+    </div>
   </div>
 </div>
 </div>
