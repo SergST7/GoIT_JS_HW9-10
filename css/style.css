@@ -1,25 +1,25 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-body{
+body {
   background-color: #e2e2e2;
 }
 
-h2{
-  padding:20px 0;
+h2 {
+  padding: 20px 0;
   text-align: center;
   font-size: 50px;
   color: #c7100b;
   text-shadow: 3px 3px 3px rgba(82, 82, 82, 0.66);
 }
 
-.wrapper{
+.wrapper {
   width: 80%;
   min-height: 1900px;
   padding: 40px 20px;
@@ -27,7 +27,7 @@ h2{
   background-color: #fff;
 }
 
-.carousel-wrapper{
+.carousel-wrapper {
   position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -57,8 +57,6 @@ h2{
   /*width: 100px;*/
 }
 
-
-
 .jcarousel-prev,
 .jcarousel-next {
   position: absolute;
@@ -79,33 +77,33 @@ h2{
   box-shadow: 0 0 2px #999;
 }
 
-.jcarousel-prev{
+.jcarousel-prev {
   left: -35px
 }
 
-.jcarousel-next{
+.jcarousel-next {
   left: 605px
 }
 
-.jcarousel-pagination{
+.jcarousel-pagination {
   position: absolute;
   bottom: 20px;
   left: 25px;
 }
 
-.jcarousel-pagination a{
-text-decoration: none;
-display: inline-block;
-font-size: 11px;
-line-height: 14px;
-min-width: 14px;
-background: #fff;
-color: #4E443C;
-border-radius: 14px;
-padding: 3px;
-text-align: center;
-margin-right: 2px;
-opacity: .75;
+.jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 14px;
+  min-width: 14px;
+  background: #fff;
+  color: #4E443C;
+  border-radius: 14px;
+  padding: 3px;
+  text-align: center;
+  margin-right: 2px;
+  opacity: .75;
 }
 
 .jcarousel-pagination a.active {
@@ -114,16 +112,18 @@ opacity: .75;
   opacity: 1;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
 }
-  /*====== CUSTOM - SELECT AND CHECKHBOX========*/
 
-.select-wrapper{
+/*====== CUSTOM - SELECT AND CHECKHBOX========*/
+
+.select-wrapper {
   /*text-align: center;*/
 }
-.chosen-container{
+
+.chosen-container {
   margin: 0 40px;
 }
 
-.checkbox-wrapper{
+.checkbox-wrapper {
   margin-top: 20px;
 }
 
@@ -141,7 +141,7 @@ opacity: .75;
 }
 
 .custom-check input {
-  margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+  margin-left: -100px;
 }
 
 .custom-checkDisabled {
@@ -150,7 +150,7 @@ opacity: .75;
 
 /*===CUSTOM CHECKBOX JS ========*/
 
-.checkbox-js{
+.checkbox-js {
   background-color: #2db0ff;
   padding: 20px;
   margin: 20px 60px;
@@ -179,9 +179,11 @@ opacity: .75;
 .check_active span {
   background-position: 0 -17px;
 }
+
 .check_active-dis.check_active span {
   background: url(../img/checkbox-disabled.png) no-repeat 0 -17px;
 }
+
 .no-check-dis span {
   background: url(../img/checkbox-disabled.png) no-repeat 0 0;
 }
@@ -251,60 +253,69 @@ input[type="radio"]:checked:disabled + label::before {
 
 /*===DROP-DOWN MENU========*/
 
-.topmenu{
+.topmenu {
   margin-top: 30px;
 }
 
-.topmenu ul{
- list-style: none;
+.topmenu ul {
+  list-style: none;
 }
 
-.menu-wrapper{
+.menu-wrapper {
   margin-top: 30px;
   padding: 10px;
   text-align: center;
 }
 
-.menu-horizontal a{
+.menu-horizontal a {
   text-decoration: none;
   color: whitesmoke;
   display: block;
   line-height: 40px;
 }
 
-.menu-horizontal > li{
+.menu-horizontal a:hover {
+  color: rgb(50, 50, 50);
+}
+
+.menu-horizontal > li {
   position: relative;
   display: inline-block;
   width: 16%;
   height: 40px;
-  background: #c7100b;
+  background-color: #c7100b;
 }
 
 .menu-horizontal li ul {
-  background-color:rgb(225,75,75);
-  position:absolute;
-  left:0;
-  top:40px;
-  width:100%;
+  background-color: #E14B4B;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 100%;
 }
 
 .menu-horizontal li li {
-  position:relative;
+  position: relative;
+}
+
+.menu-horizontal li li a {
+  border-bottom: solid 1px rgb(200, 50, 50);
+  margin: 0 10px;
 }
 
 .menu-horizontal li li ul {
-  position:absolute;
-  top:0;
-  left:100%;
-  margin:0;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin: 0;
 }
 
-.sub-menu:after{
+.sub-menu:after {
   content: ' ►';
   font-size: 10px;
 }
 
-.drop-menu:after{
+.drop-menu:after {
   content: ' ▼';
   font-size: 10px;
 }
