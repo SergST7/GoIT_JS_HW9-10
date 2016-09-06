@@ -32,12 +32,12 @@ h2 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  text-align: center;
   width: 600px;
   padding: 10px;
   border: 1px solid #525252;
   border-radius: 5px;
   margin: 20px auto 60px;
+  text-align: center;
 }
 
 .jcarousel {
@@ -45,11 +45,11 @@ h2 {
 }
 
 .jcarousel ul {
-  width: 20000em;
   position: relative;
+  width: 20000em;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .jcarousel li {
@@ -63,9 +63,9 @@ h2 {
   top: 200px;
   width: 30px;
   height: 30px;
-  text-align: center;
   background: #4E443C;
   color: #fff;
+  text-align: center;
   text-decoration: none;
   text-shadow: 0 0 1px #000;
   font: 24px/27px Arial, sans-serif;
@@ -87,23 +87,23 @@ h2 {
 
 .jcarousel-pagination {
   position: absolute;
-  bottom: 20px;
   left: 25px;
+  bottom: 20px;
 }
 
 .jcarousel-pagination a {
-  text-decoration: none;
   display: inline-block;
-  font-size: 11px;
-  line-height: 14px;
   min-width: 14px;
-  background: #fff;
-  color: #4E443C;
   border-radius: 14px;
   padding: 3px;
-  text-align: center;
   margin-right: 2px;
+  font-size: 11px;
+  line-height: 14px;
+  text-decoration: none;
+  background: #fff;
+  color: #4E443C;
   opacity: .75;
+  text-align: center;
 }
 
 .jcarousel-pagination a.active {
@@ -128,12 +128,12 @@ h2 {
 }
 
 .custom-check {
+  display: inline-block;
+  overflow: hidden;
   width: 17px;
   height: 17px;
-  display: inline-block;
   cursor: pointer;
   background: url(../img/checkbox-sprite.png);
-  overflow: hidden;
 }
 
 .custom-check {
@@ -151,9 +151,9 @@ h2 {
 /*===CUSTOM CHECKBOX JS ========*/
 
 .checkbox-js {
-  background-color: #2db0ff;
   padding: 20px;
   margin: 20px 60px;
+  background-color: #2db0ff;
 }
 
 .decor_checkbox span input[type="checkbox"] {
@@ -168,12 +168,12 @@ h2 {
 
 .decor_checkbox span {
   display: inline-block;
-  cursor: pointer;
   width: 17px;
   height: 17px;
-  background: url(../img/checkbox-sprite.png) no-repeat 0 0;
   margin: 0 5px;
+  background: url(../img/checkbox-sprite.png) no-repeat 0 0;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .check_active span {
@@ -212,8 +212,8 @@ input[type="checkbox"] + label::before,
 input[type="radio"] + label::before {
   content: "";
   display: inline-block;
-  height: 18px;
   width: 18px;
+  height: 18px;
   margin: 0 5px 0 0;
   background-image: url(../img/sprite-checkbox.png);
   background-repeat: no-repeat;
@@ -262,16 +262,16 @@ input[type="radio"]:checked:disabled + label::before {
 }
 
 .menu-wrapper {
-  margin-top: 30px;
   padding: 10px;
+  margin-top: 30px;
   text-align: center;
 }
 
 .menu-horizontal a {
-  text-decoration: none;
-  color: whitesmoke;
   display: block;
   line-height: 40px;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .menu-horizontal a:hover {
@@ -279,19 +279,19 @@ input[type="radio"]:checked:disabled + label::before {
 }
 
 .menu-horizontal > li {
-  position: relative;
   display: inline-block;
+  position: relative;
   width: 16%;
   height: 40px;
   background-color: #c7100b;
 }
 
 .menu-horizontal li ul {
-  background-color: #E14B4B;
   position: absolute;
   left: 0;
   top: 40px;
   width: 100%;
+  background-color: #E14B4B;
 }
 
 .menu-horizontal li li {

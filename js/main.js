@@ -28,7 +28,7 @@ $(function () {
   }).on('jcarouselpagination:inactive', 'a', function () {
     $(this).removeClass('active');
   });
-  
+
   // custom select
   $(".chosen-select").chosen({
     allow_single_deselect: true
